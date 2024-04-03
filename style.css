@@ -1,0 +1,39 @@
+body {
+    background-color: wheat;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    border: 1px solid gray;
+}
+
+.description dt {
+    font-size: large
+}
+
+.description dd {
+    margin-bottom: 8px;
+}
+
+.input form {
+    display: table;
+}
+
+.input form p {
+    display: table-row;
+}
+
+.input label {
+    display: table-cell;
+    font-style: italic;
+    font-size: large;
+    text-align: right;
+}
+
+.input input {
+    display: table-cell;
+    margin: 2px 0px 2px 5px;
+}
