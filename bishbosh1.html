@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bish-Bosh v1</title>
+    <script type="text/javascript">
+        function bishbosh(value) {
+            let result = ''
+            if (value % 3 === 0) {
+                result += 'Bish'
+            }
+            if (value % 4 === 0) {
+                if (result.length > 0) {
+                    result += '-'
+                }
+                result += 'Bosh'
+            }
+            if (result.length === 0) {
+                result = `${value}`
+            }
+            return result
+        }
+
+        for (let step = 1; step <= 100; step++) {
+            console.log(bishbosh(step))
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
