@@ -38,12 +38,12 @@ hr {
     margin: 2px 0px 2px 5px;
 }
 
-.footer {
+footer {
     background-color: burlywood;
     text-align: center;
     border-radius: 5px;
 }
 
-.footer p {
+footer p {
     padding: .5em;
 }

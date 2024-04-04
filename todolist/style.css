@@ -1,0 +1,17 @@
+body {
+    background-color: #85ace7;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+footer p {
+    padding: .5em;
+}
