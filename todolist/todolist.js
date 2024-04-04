@@ -31,11 +31,11 @@ clearListButton.setAttribute('onclick', 'clearList()')
 
 // Create the row HTML for an item
 function createItemRow(item) {
-    let name=`Item${currItemIndex}`
-    let html = '<div class="toDoListItemDiv">'
-    html += `<input type="checkbox" class="checkbox" id="checkbox${name}" name="${name}">`
-    html += `<p class="toDoListItem" id="${name}">${item}</p>`
-    html += `<button type="button" class="removeItem" id="remove${name}">Remove</button>`
+    let itemName = `Item${currItemIndex}`
+    let html = `<div class="toDoListItemDiv" id="div${itemName}">`
+    html += `<input type="checkbox" class="checkbox" id="checkbox${itemName}" name="${itemName}" onclick="checkItem('${itemName}')">`
+    html += `<p class="toDoListItem" id="${itemName}">${item}</p>`
+    html += `<button type="button" class="removeItem" id="remove${itemName}" onclick="removeItem('${itemName}')">Remove</button>`
     html += '</div>'
     // Update the index to use for the next item
     currItemIndex++
@@ -48,4 +48,19 @@ function addItem(item) {
     currentListHTML = currentListDiv.innerHTML
     // Add the row at the top of the list
     currentListDiv.innerHTML = rowHTML + currentListHTML
+}
+
+// Remove an item based on its name
+function removeItem(itemName) {
+    itemDiv = document.getElementById(`div${itemName}`)
+    itemDiv.remove()
+}
+
+// Deal with the checkbox toggling
+function checkItem(itemName) {
+    checkbox = document.getElementById(`checkbox${itemName}`)
+    itemDiv = document.getElementById(`div${itemName}`)
+    ptext = document.getElementById(itemName)
+    itemDiv.classList.toggle("checked", checkbox.checked)
+    ptext.classList.toggle("checked", checkbox.checked)
 }

@@ -34,15 +34,30 @@ hr {
     align-items: center;
     display: grid;
     grid-template-columns: 2em auto 5em;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 0;
+    margin: 1em;
+}
+
+.toDoListItemDiv.checked {
+    background-color: lightgray;
 }
 
 .toDoListItemDiv .checkbox {
 }
 
 .toDoListItemDiv .toDoListItem {
+    margin: 0;
+}
+
+.toDoListItemDiv .toDoListItem.checked {
+    background-color: lightgray;
+    text-decoration: line-through;
 }
 
 .toDoListItemDiv .removeItem {
+    margin: 5px 1em 5px 0;
 }
 
 footer {
