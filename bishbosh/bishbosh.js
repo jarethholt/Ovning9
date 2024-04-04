@@ -7,10 +7,14 @@ const runButton = document.getElementById('run')
 const outputDiv = document.getElementById('output')
 
 // Make sure page doesn't reload when hitting the run button
-function handleForm(event) {
-    event.preventDefault()
-}
-bishboshForm.addEventListener('submit', handleForm)
+// function handleForm(event) {
+//     event.preventDefault()
+// }
+// bishboshForm.addEventListener('submit', handleForm)
+bishboshForm.addEventListener('submit', event => event.preventDefault())
+
+// Set the form to run bish-bosh when run is clicked
+bishboshForm.setAttribute('onsubmit', 'runBishBosh()')
 
 // Bish-bosh calculation for a single value
 function bishbosh_single(bish, bosh, value) {
@@ -48,6 +52,3 @@ function runBishBosh() {
     let html = bishbosh_full(bish, bosh, max)
     outputDiv.innerHTML = html
 }
-
-// Set the form to run bish-bosh when run is clicked
-bishboshForm.setAttribute('onsubmit', 'runBishBosh()')
