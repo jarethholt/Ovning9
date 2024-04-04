@@ -44,23 +44,23 @@ function createItemRow(item) {
 
 // Add an item to the current list
 function addItem(item) {
-    rowHTML = createItemRow(item)
-    currentListHTML = currentListDiv.innerHTML
+    let rowHTML = createItemRow(item)
+    let currentListHTML = currentListDiv.innerHTML
     // Add the row at the top of the list
     currentListDiv.innerHTML = rowHTML + currentListHTML
 }
 
 // Remove an item based on its name
 function removeItem(itemName) {
-    itemDiv = document.getElementById(`div${itemName}`)
+    let itemDiv = document.getElementById(`div${itemName}`)
     itemDiv.remove()
 }
 
 // Deal with the checkbox toggling
 function checkItem(itemName) {
-    checkbox = document.getElementById(`checkbox${itemName}`)
-    itemDiv = document.getElementById(`div${itemName}`)
-    ptext = document.getElementById(itemName)
+    let checkbox = document.getElementById(`checkbox${itemName}`)
+    let itemDiv = document.getElementById(`div${itemName}`)
+    let ptext = document.getElementById(itemName)
     itemDiv.classList.toggle("checked", checkbox.checked)
     ptext.classList.toggle("checked", checkbox.checked)
 }
