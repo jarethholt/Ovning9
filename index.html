@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bish-Bosh v2</title>
-    <script type="text/javascript" src="bishbosh.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>The Bish-Bosher</h1>
+        <h1>Bish-Bosh 2.0: The Bish-Bosher</h1>
     </header>
 
     <main>
@@ -52,7 +51,7 @@
                     <input type="number" id="max" name="max"><br>
                 </p>
                 <p>
-                    <input type="submit" value="Run">
+                    <input type="submit" id="run" value="Run">
                 </p>
             </form>
         </div>
@@ -63,23 +62,14 @@
         <div class="output" id="output">
         </div>
     </main>
+
+    <footer>
+        <div class="footer">
+            <p>Created by Jareth Holt &copy;2024</p>
+        </div>
+    </footer>
 </body>
 
-<script type="text/javascript">
-    function runBishBosh() {
-        let bish = document.getElementById('bish').value;
-        let bosh = document.getElementById('bosh').value;
-        let max = document.getElementById('max').value;
-        let html = bishbosh_full(bish, bosh, max)
-        const outputDiv = document.getElementById('output')
-        outputDiv.innerHTML = html;
-    }
-
-    let form = document.getElementById("bishboshform");
-    function handleForm(event) {
-        event.preventDefault();
-    } 
-    form.addEventListener('submit', handleForm);
-</script>
+<script type="text/javascript" src="bishbosh.js"></script>
 
 </html>

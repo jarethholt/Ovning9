@@ -37,3 +37,13 @@ hr {
     display: table-cell;
     margin: 2px 0px 2px 5px;
 }
+
+.footer {
+    background-color: burlywood;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.footer p {
+    padding: .5em;
+}
