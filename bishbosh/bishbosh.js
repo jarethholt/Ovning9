@@ -41,14 +41,14 @@ function bishbosh_full(bish, bosh, max) {
         html += `<li>${bishbosh_single(bish, bosh, value)}</li>`
     }
     html += `</ul>`
-    return html;
+    return html
 }
 
 // Run the bish-bosh function with page interaction
 function runBishBosh() {
-    let bish = bishField.value;
-    let bosh = boshField.value;
-    let max = maxField.value;
+    let bish = bishField.value
+    let bosh = boshField.value
+    let max = maxField.value
     let html = bishbosh_full(bish, bosh, max)
     outputDiv.innerHTML = html
 }

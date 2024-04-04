@@ -16,8 +16,8 @@
             <p>
                 In this simple to-do list, use the text input below to add an item to the list.
                 Items in the list can then be marked as done with the checkbox; can be unmarked if not actually done;
-                and removed from the list using the
-                <span style="color:red;font-weight:bold"><samp>X</samp></span> to its right.
+                and removed from the list by clicking "Remove" on its right.
+                You can clear the list at any time by pressing the "Clear list" button above the to-do list.
             </p>
         </div>
 
@@ -33,7 +33,10 @@
             </form>
         </div>
 
-        <h3 id="toDoTitle">Current to-do list</h3>
+        <div id="toDoTitle">
+            <h3>Current to-do list</h3>
+            <button type="button" id="clearList">Clear list</button>
+        </div>
         <div id="currentList"></div>
     </main>
 

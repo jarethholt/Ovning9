@@ -12,8 +12,37 @@ hr {
 }
 
 #toDoTitle {
-    padding: 5px 10px;
     border-bottom: 1px dashed lightgray;
+    display: flex;
+    align-items: center;
+}
+
+#toDoTitle h3 {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: .5em;
+}
+
+#toDoTitle button {
+    align-items: center;
+    margin-bottom: -.6em;
+}
+
+.toDoListItemDiv {
+    width: 95%;
+    margin: auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2em auto 5em;
+}
+
+.toDoListItemDiv .checkbox {
+}
+
+.toDoListItemDiv .toDoListItem {
+}
+
+.toDoListItemDiv .removeItem {
 }
 
 footer {
