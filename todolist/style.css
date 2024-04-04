@@ -1,15 +1,26 @@
 body {
     background-color: #85ace7;
+    padding: .5em 1em;
 }
 
 header {
     text-align: center;
 }
 
+hr {
+    border: 1px solid rgb(200, 200, 200);
+}
+
+#toDoTitle {
+    padding: 5px 10px;
+    border-bottom: 1px dashed lightgray;
+}
+
 footer {
     text-align: center;
     background-color: lightgray;
     border-radius: 5px;
+    margin-top: 2em;
 }
 
 footer p {
