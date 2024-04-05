@@ -40,12 +40,13 @@ hr {
     margin: 1em;
 }
 
-.toDoListItemDiv.checked {
-    background-color: lightgray;
-}
-
 .toDoListItemDiv .toDoListItem {
     margin: 0;
+}
+
+/* The checked classes define what to do when a list item's box is checked */
+.toDoListItemDiv.checked {
+    background-color: lightgray;
 }
 
 .toDoListItemDiv .toDoListItem.checked {
