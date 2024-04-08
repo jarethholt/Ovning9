@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do list</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-do list</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>To-do list</h1>
-    </header>
+  <header>
+    <h1>To-do list</h1>
+  </header>
 
-    <main>
-        <div class="description">
-            <p>
-                In this simple to-do list, use the text input below to add an item to the list.
-                Items in the list can then be marked as done with the checkbox; can be unmarked if not actually done;
-                and removed from the list by clicking "Remove" on its right.
-                You can clear the list at any time by pressing the "Clear list" button above the to-do list.
-            </p>
-        </div>
+  <main>
+    <div class="description">
+      <p>
+        In this simple to-do list, use the text input below to add an item to the list.
+        Items in the list can then be marked as done with the checkbox; can be unmarked if not actually done;
+        and removed from the list by clicking "Remove" on its right.
+        You can clear the list at any time by pressing the "Clear list" button above the to-do list.
+      </p>
+    </div>
 
-        <hr>
+    <hr>
 
-        <div class="input">
-            <!-- Form with one field (item to add) and a submit button -->
-            <form id="addItemForm">
-                <p>
-                    <label for="itemToAdd">Item to add:</label>
-                    <input type="text" id="itemToAdd" name="itemToAdd">
-                    <input type="submit" id="addItem" value="Add item">
-                </p>
-            </form>
-        </div>
+    <div class="input">
+      <!-- Form with one field (item to add) and a submit button -->
+      <form id="addItemForm">
+        <p>
+          <label for="itemToAdd">Item to add:</label>
+          <input type="text" id="itemToAdd" name="itemToAdd">
+          <input type="submit" id="addItem" value="Add item">
+        </p>
+      </form>
+    </div>
 
-        <div id="toDoTitle">
-            <h3>Current to-do list</h3>
-            <!-- Add a button to clear the whole list at once -->
-            <button type="button" id="clearList">Clear list</button>
-        </div>
-        <!-- Empty div for holding the to-do list -->
-        <div id="currentList"></div>
-    </main>
+    <div id="toDoTitle">
+      <h3>Current to-do list</h3>
+      <!-- Add a button to clear the whole list at once -->
+      <button type="button" id="clearList">Clear list</button>
+    </div>
+    <!-- Empty div for holding the to-do list -->
+    <div id="currentList"></div>
+  </main>
 
-    <footer>
-        <p>Created by Jareth Holt &copy;2024</p>
-    </footer>
+  <footer>
+    <p>Created by Jareth Holt &copy;2024</p>
+  </footer>
+  
+  <script type="text/javascript" src="todolist.js"></script>
 </body>
-
-<script type="text/javascript" src="todolist.js"></script>
 
 </html>

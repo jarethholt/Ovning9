@@ -1,70 +1,70 @@
 body {
-    background-color: #85ace7;
-    padding: .5em 1em;
+  background-color: #85ace7;
+  padding: .5em 1em;
 }
 
 header {
-    text-align: center;
+  text-align: center;
 }
 
 hr {
-    border: 1px solid rgb(200, 200, 200);
+  border: 1px solid rgb(200, 200, 200);
 }
 
 #toDoTitle {
-    border-bottom: 1px dashed lightgray;
-    display: flex;
-    align-items: center;
+  border-bottom: 1px dashed lightgray;
+  display: flex;
+  align-items: center;
 }
 
 #toDoTitle h3 {
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-bottom: .5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: .5em;
 }
 
 #toDoTitle button {
-    align-items: center;
-    margin-bottom: -.6em;
+  align-items: center;
+  margin-bottom: -.6em;
 }
 
 .toDoListItemDiv {
-    width: 95%;
-    margin: auto;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 2em auto 5em;
-    border: 1px solid gray;
-    border-radius: 10px;
-    padding: 0;
-    margin: 1em;
+  width: 95%;
+  margin: auto;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 2em auto 5em;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 0;
+  margin: 1em;
 }
 
 .toDoListItemDiv .toDoListItem {
-    margin: 0;
+  margin: 0;
 }
 
 /* The checked classes define what to do when a list item's box is checked */
 .toDoListItemDiv.checked {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 .toDoListItemDiv .toDoListItem.checked {
-    background-color: lightgray;
-    text-decoration: line-through;
+  background-color: lightgray;
+  text-decoration: line-through;
 }
 
 .toDoListItemDiv .removeItem {
-    margin: 5px 1em 5px 0;
+  margin: 5px 1em 5px 0;
 }
 
 footer {
-    text-align: center;
-    background-color: lightgray;
-    border-radius: 5px;
-    margin-top: 2em;
+  text-align: center;
+  background-color: lightgray;
+  border-radius: 5px;
+  margin-top: 2em;
 }
 
 footer p {
-    padding: .5em;
+  padding: .5em;
 }
